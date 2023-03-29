@@ -1,0 +1,61 @@
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.main-header {
+  background-color: hotpink;
+  position: fixed;
+  width: 100%;
+}
+.main-header .menu-main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+}
+.main-header .menu-main .navbar-logo {
+  margin-right: auto;
+}
+.main-header .menu-main .menu-icon .line {
+  background-color: #fafafa;
+  width: 25px;
+  height: 2px;
+  display: block;
+  margin: 5px 0;
+  transition: 0.2s;
+}
+.main-header .menu-main .menu-icon.exit .line:first-child {
+  transform: rotate(45deg) translate(5px, 0px);
+}
+.main-header .menu-main .menu-icon.exit .line:nth-child(2) {
+  display: none;
+}
+.main-header .menu-main .menu-icon.exit .line:last-child {
+  transform: rotate(-45deg) translate(5px, 0px);
+}
+.main-header .menu-main .menu-list {
+  list-style: none;
+  flex: 0 0 100%;
+  display: none;
+}
+.main-header .menu-main .menu-list.active {
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.main-header .menu-main .menu-list .menu-item {
+  flex: 0 0 100%;
+  text-align: center;
+  padding: 1rem;
+}
+section {
+  height: 100vh;
+  background-color: antiquewhite;
+}/*# sourceMappingURL=style.css.map */
